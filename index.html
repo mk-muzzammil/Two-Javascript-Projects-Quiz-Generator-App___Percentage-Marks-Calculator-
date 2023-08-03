@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Marks-Calculator | App</title>
+</head>
+<body>
+  <div class="backgroundImageContainer">
+
+    <div class="calculatorCardBox">
+      <form class="inputGrid" onsubmit="calculateMarks(event)">
+        <input required type="number" id="mathNumber" name="maths"  placeholder="Maths" min="0" max="100">
+        <input required type="number" id="EnglishNumber" name="english" placeholder="English" min="0" max="100" >
+        <input required type="number" id="HindiNumber"  name="hindi" placeholder="Hindi" min="0" max="100" >
+        <input required type="number" id="ScienceNumber" name="Science"  placeholder="Science" min="0" max="100" >
+       
+        
+
+      </form>
+      <div class="primary-Button">
+          <button  id="calculateButton">Calculate</button>
+      </div>
+      
+      <p class="resultPara" id="result"></p>
+      
+      
+    </div>
+
+    <div class="contentContainer">
+      <h1 id="mainheading">Calculate Your <span id="largeWeightText"> Percentage </span></h1>
+
+    </div>
+    
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="./index.js"></script>
+</body>
+</html>

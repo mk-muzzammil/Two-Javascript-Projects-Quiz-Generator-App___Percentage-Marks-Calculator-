@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400;1,600;1,700&display=swap');
+
+*{
+  padding: 0;margin: 0;box-sizing: border-box;
+}
+:root {
+  --primary: #393e3e;
+  --secondary: #145c72;
+  --secondary-light: #00a0d1;
+}
+html{
+  /* it means that 1 rem will be 10px now as we know rem adjust its size acc to html */
+  font-size: 62.5%;  
+}
+body{
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;  
+}
+
+
+.backgroundImageContainer{
+  background-image: url(./images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 4rem;
+}
+
+.calculatorCardBox{
+  height:70%;
+  max-width: 550px;
+  border-radius: 2rem;
+  background-color:var(--primary);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+
+}
+.inputGrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  
+  gap: 2rem;
+  
+}
+.inputGrid input{
+  padding: 1rem;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid white;
+  color:white;
+  font-size: 1.7rem;
+
+
+  /* border: none; */
+} 
+.inputGrid input::placeholder{
+  color: white;
+
+
+}
+.inputGrid input:focus-visible{
+  outline: 2px solid var(--secondary);
+  border: 2px solid var(--secondary);
+}
+.primary-Button{
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem; 
+}
+#calculateButton{
+  place-self: center;
+  padding: 1.2rem 4rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: var(--secondary);
+  color: white;
+}
+#calculateButton:hover{
+  cursor: pointer;
+  background-color: #124251;
+
+}
+#calculateButton:active{
+  background-color: var(--secondary-light);
+}
+.contentContainer{
+  margin-top: 2rem;
+  max-width: 450px;
+  text-align: center;
+}
+#mainheading{
+  max-width: 100%;
+  font-size: 3.8vw;
+  line-height: 5rem;
+  font-weight: 600;
+}
+#largeWeightText{
+  font-size: 5.5vw !important;
+  font-weight: 700;
+
+}
+
+.resultPara{
+  font-size:2.3vw;
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  color: white;
+}
+
+@media screen and (max-width:640px) {
+
+  .calculatorCardBox{
+    height: 82%;
+  }
+  .resultPara{
+  font-size:4vw;
+
+  }
+  #mainheading{
+    font-size: 6vw;
+
+  }
+  #largeWeightText{
+    font-size: 9vw !important;
+
+  }
+  
+}
+@media screen and (max-width:450px) {
+  #mainheading{
+   line-height: 2.3rem;
+
+  }
+  
+}
+
+
+
