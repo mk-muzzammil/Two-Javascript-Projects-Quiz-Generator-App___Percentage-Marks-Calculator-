@@ -1,4 +1,4 @@
-# Javascript-Projects-Quiz-Generator-App
+# Javascript-Projects-Quiz-Generator-App And Percentage Marks Calculator in Other Branch check it out  
 I will take figma design of this project and Made this project for practising my HTML CSS skills feel free to see and practise it by your own I have made this  Project for your guidance  to develope  javascript skills 
 
 # Quiz Generator App
