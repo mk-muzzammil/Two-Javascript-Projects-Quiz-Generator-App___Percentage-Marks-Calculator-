@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Generator|App</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+  <div class="backgroungContainer">
+
+    <div class="cardBoxContainer">
+
+      <div class="scoreDiv">
+        <h1 class="primary-heading" id="mainHeading">Score -> <span id="score">0</span></h1>
+
+      </div>
+
+      <form onsubmit="verifyAnswer(event)" class="inputForm">
+        <h2 class="questionText">
+          Q. What is 7 multiply by 8 ?
+        </h2>
+        <input required type="number" name="answer" id="numberInput" min="0" placeholder="Enter Your Answer...">
+
+        <button type="submit">Submit</button>
+
+      </form>
+
+
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+  
+</body>
+</html>

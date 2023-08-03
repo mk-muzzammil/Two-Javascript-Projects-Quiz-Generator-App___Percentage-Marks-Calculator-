@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+  --primary: #8f00ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+.backgroungContainer{
+  background-image: url(./images/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  
+
+}
+.cardBoxContainer{
+  background: rgba(240, 240, 240, 0.68);
+  height: 320px;
+  width: 600px;
+  border:1px solid red;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.36);
+  border-radius: 10px; 
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+}
+.primary-heading{
+  color: var(--primary);
+  font-size: 2rem;
+}
+.inputForm{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.3rem;
+
+}
+.inputForm input{
+  font-size: 1.3rem;
+  padding: 0.6rem;
+  background: transparent;
+  border:1px solid black;
+  border-radius: 3px;
+}
+.inputForm input:focus-visible{
+  border: 2px solid var(--primary);
+  outline:2px solid var(--primary);
+}
+.inputForm button{
+  font-size: 2rem;
+  padding: 0.5rem;
+  background-color: var(--primary);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.inputForm button:hover{
+  cursor: pointer;
+  background-color:#9d2cf4e0;
+}
+.inputForm button:active{
+  background-color:#4c206ef4;
+}
+
+@media screen and (max-width:550px) {
+  .cardBoxContainer{
+    height:350px;
+  }
+  .questionText{
+    font-size: 5vw;
+  }
+
+  
+}
